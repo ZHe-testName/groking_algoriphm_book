@@ -1,0 +1,38 @@
+* {
+  font-family: 'Mulish', sans-serif;
+}
+
+body {
+  width: 1200px;
+  margin: 0px auto;
+  padding: 15px 25px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: tomato;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.examples_list {
+  height: 0px;
+  transition: all;
+  transition-duration: 0.4s;
+  overflow-y: hidden;
+}
+
+.show {
+  transition: all;
+  transition-duration: 1.4s;
+  height: 500px;
+}
+
+.line_box {
+  border-top: 2px solid rgb(94, 94, 94);
+  border-bottom: 2px solid rgb(94, 94, 94);
+}
