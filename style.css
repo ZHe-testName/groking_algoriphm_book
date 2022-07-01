@@ -3,13 +3,14 @@
 }
 
 body {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0px auto;
   padding: 15px 25px;
 }
 
 section {
   margin-bottom: 20px;
+  padding: 20px 10px;
 }
 
 h1 {
@@ -26,13 +27,117 @@ h1 {
   overflow-y: hidden;
 }
 
+.recursion_article {
+  height: 0px;
+  transition: all;
+  transition-duration: 0.8s;
+  overflow-y: hidden;
+}
+
 .show {
   transition: all;
   transition-duration: 1.4s;
   height: 500px;
 }
 
+.show_recursion_block {
+  transition: all;
+  transition-duration: 1.4s;
+  height: 1050px;
+}
+
 .line_box {
   border-top: 2px solid rgb(94, 94, 94);
   border-bottom: 2px solid rgb(94, 94, 94);
+}
+
+/* .selection-sort {
+
+} */
+
+.selection-sort > pre {
+  min-width: 80px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+  display: block;
+  margin: 30px 0px 20px 0px;
+}
+
+.selection-sort > p {
+  position: relative;
+}
+
+.selection-sort > p::before {
+  content: '';
+  height: 25px;
+  width: 4px;
+  position: absolute;
+  top: 20px;
+  left: 70px;
+  background-color: black;
+  border-radius: 4px;
+}
+
+.factorial_animation {
+  display: flex;
+  align-items: center;
+  width: 1000px;
+}
+
+.factorial_function {
+  border-top: 2px solid rgb(92, 65, 65);
+  border-bottom: 2px solid rgb(92, 65, 65);
+  padding: 10px 0px;
+  font-size: 17px;
+  margin-right: 200px;
+}
+
+.factorial_function > pre{
+  position: relative;
+  margin: 0px;
+}
+
+.factorial_function > pre::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid tomato;
+  border-right: 3px solid tomato;
+  position: absolute;
+  top: 5px;
+  left: 23px;
+  transform: rotateZ(45deg);
+}
+
+.stack > h4 {
+  margin-bottom: 0px;
+}
+
+.stack_animation {
+  display: flex;
+  border: 2px solid rgb(167, 167, 26);
+  padding: 0px 30px;
+  margin-right: 30px;
+  height: 460px;
+  width: 80px;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+}
+
+.stack_animation li {
+  width: 80px;
+  display: flex;
+  border: 1px solid black;
+  flex-wrap: wrap;
+}
+
+.stack_animation li > div{
+  border: 1px solid black;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.stack_animation li > div:first-child{
+  width: 80px;
 }
